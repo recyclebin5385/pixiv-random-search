@@ -12,7 +12,7 @@
 
 $(function() {
     $("nav.pager ul").append("<li><a href='#' class='ui-button-light' title='random'>random</a></li>").click(function(){
-        var maxPage = Math.floor((parseInt($("#page-search .info .count").text()) + 19) / 20);
+        var maxPage = Math.min(Math.floor((parseInt($("#page-search .info .count").text()) + 19) / 20));
 
         var page = Math.floor(Math.random() * maxPage) + 1;
 
