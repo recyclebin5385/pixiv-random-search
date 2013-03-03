@@ -15,7 +15,6 @@ $(function() {
             return;
         }
         var maxPage = Math.min(Math.floor((parseInt(RegExp.$1) + 19) / 20), 1000);
-        alert(maxPage);
         var page = Math.floor(Math.random() * maxPage) + 1;
 
         var newUrl;
